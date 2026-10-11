@@ -52,7 +52,7 @@
 
 
 /* ELVORA visual polish: landscape belongs to the landing hero background, not inside dashboard cards */
-.hero{background:linear-gradient(90deg,rgba(8,15,11,.94) 0%,rgba(8,15,11,.78) 42%,rgba(8,15,11,.38) 72%,rgba(8,15,11,.68) 100%),linear-gradient(0deg,#101412 0%,transparent 34%),url("assets/hero-landscape.jpg") center 48%/cover no-repeat;border:1px solid #24372b;border-radius:0 0 30px 30px;box-shadow:inset 0 -1px 0 #48e5a322,0 25px 80px #0004}
+.hero{background:linear-gradient(90deg,rgba(8,15,11,.94) 0%,rgba(8,15,11,.78) 42%,rgba(8,15,11,.38) 72%,rgba(8,15,11,.68) 100%),linear-gradient(0deg,#101412 0%,transparent 34%),radial-gradient(ellipse at 70% 10%,rgba(72,229,163,.12),transparent 48%) center/cover no-repeat;border:1px solid #24372b;border-radius:0 0 30px 30px;box-shadow:inset 0 -1px 0 #48e5a322,0 25px 80px #0004}
 .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 72% 44%,rgba(72,229,163,.12),transparent 45%);pointer-events:none;z-index:-1}
 .hero>div{position:relative}.hero-visual .orbit{border-color:#8cae8b35}.hero-visual .float-card{background:rgba(15,24,18,.82);backdrop-filter:blur(14px);border-color:#7ca88a55}
 /* Make each landing section reveal in sequence as the visitor scrolls */
@@ -66,7 +66,7 @@
 .amount-quick button{border:1px solid #34473a;border-radius:9px;background:#17231b;color:var(--text);padding:8px 12px;font-size:11px;font-weight:700}
 .amount-quick button:hover,.amount-quick button.active{border-color:var(--green);background:#1d3828;color:var(--green)}
 .expense-hint{grid-column:1/-1;font-size:11px;color:var(--muted);line-height:1.5;margin-top:-3px}
-@media(max-width:760px){.hero{background:linear-gradient(180deg,rgba(8,15,11,.82),rgba(8,15,11,.91) 55%,#101412 100%),url("assets/hero-landscape.jpg") center/cover no-repeat;border-radius:0 0 22px 22px}.hero-visual{min-height:390px}}
+@media(max-width:760px){.hero{background:linear-gradient(180deg,rgba(8,15,11,.82),rgba(8,15,11,.91) 55%,#101412 100%),radial-gradient(ellipse at 70% 10%,rgba(72,229,163,.12),transparent 48%) center/cover no-repeat;border-radius:0 0 22px 22px}.hero-visual{min-height:390px}}
 @media(prefers-reduced-motion:reduce){#landing .section{opacity:1;transform:none;transition:none}}
 
 /* ELVORA visual polish: landscape is a true full-width hero background, not a card image */
@@ -100,7 +100,7 @@
   background-image:
     linear-gradient(90deg,rgba(7,14,10,.86) 0%,rgba(7,14,10,.65) 42%,rgba(7,14,10,.30) 72%,rgba(7,14,10,.56) 100%),
     linear-gradient(0deg,#101412 0%,transparent 38%),
-    url("assets/hero-landscape.jpg") !important;
+    radial-gradient(ellipse at 70% 10%,rgba(72,229,163,.12),transparent 48%) !important;
   background-position:center 48%;
   background-size:cover;
   background-repeat:no-repeat;
@@ -108,14 +108,14 @@
 .auth-screen{
   background-image:
     linear-gradient(135deg,rgba(5,12,8,.76),rgba(5,12,8,.68)),
-    url("assets/login-gradient.jpg") !important;
+    radial-gradient(circle at 78% 18%,rgba(72,229,163,.14),transparent 42%) !important;
   background-size:cover;
   background-position:center;
 }
 .auth-art{
   background-image:
     linear-gradient(135deg,rgba(5,12,8,.68),rgba(5,12,8,.54)),
-    url("assets/login-gradient.jpg") !important;
+    radial-gradient(circle at 78% 18%,rgba(72,229,163,.14),transparent 42%) !important;
   background-size:cover;
   background-position:center;
 }
@@ -134,14 +134,14 @@
 .hero{
   position:relative;
   isolation:isolate;
-  background-image:linear-gradient(90deg,rgba(7,14,10,.78) 0%,rgba(7,14,10,.48) 52%,rgba(7,14,10,.35) 100%),linear-gradient(0deg,#101412 0%,transparent 44%),url("assets/hero-landscape.jpg") !important;
+  background-image:linear-gradient(90deg,rgba(7,14,10,.78) 0%,rgba(7,14,10,.48) 52%,rgba(7,14,10,.35) 100%),linear-gradient(0deg,#101412 0%,transparent 44%),radial-gradient(ellipse at 70% 10%,rgba(72,229,163,.12),transparent 48%) !important;
   background-size:cover !important;
   background-position:center 48% !important;
   background-repeat:no-repeat !important;
   border-radius:0 0 28px 28px;
 }
 .hero-visual{
-  background-image:linear-gradient(135deg,rgba(8,17,11,.35),rgba(8,17,11,.15)),url("assets/hero-landscape.jpg") !important;
+  background-image:linear-gradient(135deg,rgba(8,17,11,.35),rgba(8,17,11,.15)),radial-gradient(ellipse at 70% 10%,rgba(72,229,163,.12),transparent 48%) !important;
   background-size:cover !important;
   background-position:center !important;
   background-repeat:no-repeat !important;
@@ -155,13 +155,13 @@
 .hero-visual .float-card{background:linear-gradient(135deg,rgba(25,39,29,.92),rgba(13,23,16,.9));backdrop-filter:blur(14px)}
 .auth-screen{
   background-color:#0d120f !important;
-  background-image:linear-gradient(135deg,rgba(5,12,8,.48),rgba(5,12,8,.42)),url("assets/login-gradient.jpg") !important;
+  background-image:linear-gradient(135deg,rgba(5,12,8,.48),rgba(5,12,8,.42)),radial-gradient(circle at 78% 18%,rgba(72,229,163,.14),transparent 42%) !important;
   background-size:cover !important;
   background-position:center !important;
   background-repeat:no-repeat !important;
 }
 .auth-art{
-  background-image:linear-gradient(135deg,rgba(5,12,8,.28),rgba(5,12,8,.42)),url("assets/login-gradient.jpg") !important;
+  background-image:linear-gradient(135deg,rgba(5,12,8,.28),rgba(5,12,8,.42)),radial-gradient(circle at 78% 18%,rgba(72,229,163,.14),transparent 42%) !important;
   background-size:cover !important;
   background-position:center !important;
   background-repeat:no-repeat !important;
@@ -171,7 +171,7 @@
 .auth-panel{background:linear-gradient(145deg,rgba(12,20,15,.78),rgba(8,14,10,.86)) !important;backdrop-filter:blur(14px)}
 @media(max-width:900px){
   .hero{background-position:center !important}
-  .auth-screen{background-image:linear-gradient(135deg,rgba(5,12,8,.40),rgba(5,12,8,.52)),url("assets/login-gradient.jpg") !important}
+  .auth-screen{background-image:linear-gradient(135deg,rgba(5,12,8,.40),rgba(5,12,8,.52)),radial-gradient(circle at 78% 18%,rgba(72,229,163,.14),transparent 42%) !important}
   .auth-panel{background:linear-gradient(145deg,rgba(12,20,15,.78),rgba(8,14,10,.86)) !important;backdrop-filter:blur(14px)}
 }
 
@@ -294,3 +294,18 @@ main#top .hero-visual::after {
   .auth-panel{min-height:100vh;padding:72px 22px 24px}
 }
 
+
+
+/* Challenge-specific presentation: Broke But Functional — Survive the Month */
+.challenge-brief{margin:18px 0 22px;padding:22px;background:radial-gradient(circle at 100% 0,rgba(72,229,163,.09),transparent 38%),linear-gradient(145deg,#171f1a,#131915);border-color:#34513e}
+.challenge-brief-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}
+.challenge-brief-head h3{font-size:clamp(21px,2.3vw,28px);letter-spacing:-.035em;margin:5px 0 6px}
+.challenge-brief-head p{margin:0;color:var(--muted);font-size:13px;max-width:610px}
+.challenge-brief-head>.pill{white-space:nowrap;color:var(--green);border-color:#34513e;background:#14241a}
+.challenge-pill-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.challenge-pill-grid>div{padding:13px;border:1px solid var(--line);border-radius:13px;background:rgba(10,15,12,.45);min-height:82px}
+.challenge-pill-grid strong{display:block;font-size:12px;margin-bottom:5px;color:var(--text)}
+.challenge-pill-grid span{display:block;color:var(--muted);font-size:11px;line-height:1.5}
+.challenge-connection{margin:15px 0 0;padding-top:13px;border-top:1px solid var(--line);color:#c6d1c8;font-size:12px;line-height:1.7}
+@media(max-width:1050px){.challenge-pill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.challenge-brief{padding:16px}.challenge-brief-head{flex-direction:column}.challenge-pill-grid{grid-template-columns:1fr 1fr}.quick-actions{grid-template-columns:repeat(2,minmax(0,1fr))}}

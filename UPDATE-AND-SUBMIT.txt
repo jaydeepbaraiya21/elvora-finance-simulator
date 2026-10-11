@@ -1,0 +1,20 @@
+ELVORA CHALLENGE-ALIGNED UPDATE
+
+This version makes the challenge statement explicit in the landing page and overview, starts a representative ₹10,000 / 30-day sample scenario, adds unexpected-expense and subscription shortcuts, updates documentation, and replaces missing background-image references with CSS gradients.
+
+Update an existing GitHub submission repository (preserves the .git folder):
+1. Extract this project folder.
+2. Copy its contents over your existing ELVORA-SUBMISSION-REPO folder, excluding .git, node_modules and dist.
+3. From the destination repo, run:
+   npm.cmd install
+   npm.cmd run build
+4. Test locally with:
+   npm.cmd run preview
+5. If the page and interactions work, run:
+   git add .
+   git commit -m "Align ELVORA with Survive the Month challenge"
+   git push origin main
+6. Netlify currently uses Netlify Drop, so deploy the NEW dist folder contents to the existing site from the Netlify Deploys page. Then open the public URL and test it again.
+7. Only make the final evaluation submission after verifying that the portal is still pointing at the same repository registered in the first submission.
+
+Known scope: React JSX provides the UI; some simulator logic remains in public/legacy-engine.js as a compatibility bridge. Authentication and all transactions are demo-only. No real bank connection or real payments are supported.

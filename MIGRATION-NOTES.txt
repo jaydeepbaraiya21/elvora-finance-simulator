@@ -1,6 +1,9 @@
-MIGRATION NOTES
+CHALLENGE ALIGNMENT NOTES
 
-- The complete source page hierarchy is now React JSX in src/components/ rather than an original HTML file or iframe.
-- Original appearance styles are preserved in src/styles.css.
-- The original interactive simulator logic is preserved in public/legacy-engine.js and connected to React-rendered controls through the global bridge. This is a compatibility migration; simulator business logic has not all been rewritten into React hooks/state.
-- Authentication is a demo-only frontend flow.
+- Challenge title and exact “Broke But Functional — Survive the Month” framing are visible on the landing page and Overview.
+- Default judge scenario: ₹10,000 over 30 days, with everyday spending, an unexpected Health/Emergency expense, a phone bill, recurring subscription, pending income and an emergency-fund goal.
+- Decisions connect to remaining balance, daily allowance, commitments, savings allocation, 30-day forecast and financial-health/risk explanations.
+- Dedicated unexpected-expense shortcut and recurring-subscription shortcut are available from Overview.
+- Missing login/hero background image references were replaced with CSS gradients so builds do not depend on absent asset files.
+- React JSX provides the UI; `public/legacy-engine.js` remains a compatibility layer for some simulator business logic.
+- Demo-only frontend: no real accounts, bank connections or payments.
