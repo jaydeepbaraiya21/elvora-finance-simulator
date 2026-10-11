@@ -1,0 +1,6 @@
+MIGRATION NOTES
+
+- The complete source page hierarchy is now React JSX in src/components/ rather than an original HTML file or iframe.
+- Original appearance styles are preserved in src/styles.css.
+- The original interactive simulator logic is preserved in public/legacy-engine.js and connected to React-rendered controls through the global bridge. This is a compatibility migration; simulator business logic has not all been rewritten into React hooks/state.
+- Authentication is a demo-only frontend flow.
